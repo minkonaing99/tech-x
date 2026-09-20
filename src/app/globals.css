@@ -1,0 +1,152 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand */
+  --color-cream: #ffffff;
+  --color-surface: #f5f7fa;
+  --color-sand: #e9edf2;
+  --color-ink: #0b0f14;
+  --color-ink-soft: #374151;
+  --color-muted: #586171;
+  --color-accent: #0066ff;
+  --color-accent-soft: #00c2ff;
+  --color-line: #dfe4eb;
+  --color-dark-bg: #0b0f14;
+  --color-dark-ink: #ffffff;
+
+  /* Semantic */
+  --color-success: #5f7a4a;
+  --color-warning: #b07a2e;
+  --color-error: #a23b2a;
+  --color-info: #4a6b7a;
+
+  /* Fonts */
+  --font-display: var(--font-manrope), Arial, sans-serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 2px rgba(11, 15, 20, 0.04);
+  --shadow-md: 0 4px 12px rgba(11, 15, 20, 0.08);
+  --shadow-lg: 0 12px 32px rgba(11, 15, 20, 0.12);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 400;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-cream);
+  }
+
+  /* Focus ring. No `border-radius` here - it overrides the element's own
+     radius, squaring pill buttons the moment they take keyboard focus. */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  /* Burmese content pages. Applied on the page wrapper, inherited by children. */
+  .font-my {
+    font-family: var(--font-noto-myanmar), var(--font-sans);
+    word-break: break-word;
+    line-break: normal;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-muted);
+  }
+
+  .price {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+  }
+
+  /**
+   * Skeleton placeholder. Cool neutral pulse, per DESIGN.md.
+   *
+   * The keyframe resting state is `--color-line`, so when the global
+   * reduced-motion rule collapses the duration the block still reads as a
+   * placeholder rather than freezing mid-fade.
+   */
+  @keyframes skeleton-pulse {
+    0%,
+    100% {
+      background-color: var(--color-line);
+    }
+    50% {
+      background-color: var(--color-sand);
+    }
+  }
+
+  .skeleton {
+    background-color: var(--color-line);
+    animation: skeleton-pulse 1.4s ease-in-out infinite;
+  }
+
+  .container-prose {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-prose {
+      padding-inline: 2rem;
+    }
+  }
+}

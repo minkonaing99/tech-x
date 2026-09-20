@@ -1,0 +1,83 @@
+{
+  "name": "merxylab-store",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "cron:cancel-expired": "tsx --env-file=.env.local scripts/cancel-expired-orders.ts",
+    "user:password": "tsx --env-file=.env.local scripts/set-password.ts",
+    "mail:preview": "TSX_TSCONFIG_PATH=tsconfig.scripts.json tsx --env-file=.env.local scripts/send-test-emails.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@auth/drizzle-adapter": "^1.11.3",
+    "@aws-sdk/client-s3": "^3.1070.0",
+    "@react-email/components": "^1.0.12",
+    "@react-email/render": "^2.0.8",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.2",
+    "bcryptjs": "^3.0.3",
+    "clsx": "^2.1.1",
+    "drizzle-orm": "^0.45.2",
+    "framer-motion": "^12.40.0",
+    "fuse.js": "^7.4.2",
+    "lucide-react": "^1.18.0",
+    "mysql2": "^3.22.5",
+    "next": "^15.5.23",
+    "next-auth": "^5.0.0-beta.32",
+    "nodemailer": "^9.0.5",
+    "postcss": "^8.5.26",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "server-only": "^0.0.1",
+    "sharp": "^0.35.3",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.1",
+    "typescript": "5.7.2",
+    "zod": "^4.4.3",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/nodemailer": "^8.0.1",
+    "@types/react-dom": "19.0.2",
+    "@vitest/coverage-v8": "^4.1.10",
+    "dotenv": "^17.4.2",
+    "drizzle-kit": "^0.31.10",
+    "eslint": "9.39.4",
+    "eslint-config-next": "15.1.0",
+    "jsdom": "^30.0.1",
+    "tsx": "^4.22.4",
+    "vitest": "^4.1.10"
+  },
+  "engines": {
+    "node": ">=22.22.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "sharp@0.35.3": true,
+    "unrs-resolver@1.12.2": true
+  },
+  "overrides": {
+    "esbuild": "^0.28.1",
+    "next": {
+      "postcss": "^8.5.10"
+    },
+    "sharp": "^0.35.3",
+    "brace-expansion": "^5.0.9",
+    "js-yaml": "^4.3.1"
+  }
+}
