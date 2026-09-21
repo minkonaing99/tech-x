@@ -21,6 +21,9 @@ dist/
 .env*
 *.env
 *.env.*
+# Re-allow the committed template
+!.env.example
+
 # Logs
 *.log
 npm-debug.log*
@@ -41,7 +44,8 @@ Thumbs.db
 coverage/
 .nyc_output/
 
-# Scratch output from `npm run db:generate`.
+# Scratch output from `npm run db:generate`. Read the SQL, copy what you need
+# into docs/db-bootstrap.sql, delete the folder. Never a migration history.
 .drizzle-generated/
 
 # Vercel
