@@ -68,7 +68,7 @@ export function OrderInvoice({
 
 OrderInvoice.PreviewProps = {
   orderId: '1c34b3b6-1234-5678-9abc-def012345678',
-  orderUrl: 'https://store.merxylab.com/order/1c34b3b6-1234-5678-9abc-def012345678',
+  orderUrl: 'https://techx-store.shop/order/1c34b3b6-1234-5678-9abc-def012345678',
   total: 'Ks 555,000',
   subtotal: 'Ks 550,000',
   deliveryFee: 'Ks 5,000',

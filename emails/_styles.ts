@@ -4,7 +4,7 @@
  */
 export const body = {
   background: '#ffffff',
-  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
   margin: 0,
   padding: '32px 16px',
   color: '#0b0f14',
@@ -26,6 +26,7 @@ export const mark = {
   color: '#586171',
 }
 export const h1 = {
+  fontFamily: "'Manrope', Arial, sans-serif",
   fontSize: '28px',
   margin: '0 0 12px',
   fontWeight: 500 as const,
@@ -41,9 +42,9 @@ export const code = {
   fontSize: '13px',
 }
 
-/* ── Tech X brand kit (blue accent, Montserrat, dark footer) ── */
+/* ── Tech X brand kit (Manrope headings, Inter body, blue accent) ── */
 
-const sans = "'Montserrat', Arial, sans-serif"
+const sans = "'Manrope', Arial, sans-serif"
 const mono = 'ui-monospace, SFMono-Regular, Menlo, monospace'
 
 /**

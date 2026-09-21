@@ -1,18 +1,7 @@
-import { Font, Head } from '@react-email/components'
-import { siteOrigin } from '@/lib/links'
+import { Head } from '@react-email/components'
 
 export function BrandHead() {
-  return (
-    <Head>
-      <Font
-        fontFamily="Montserrat"
-        fallbackFontFamily="Arial"
-        webFont={{ url: `${siteOrigin()}/brand/montserrat.ttf`, format: 'truetype' }}
-        fontWeight={400}
-        fontStyle="normal"
-      />
-    </Head>
-  )
+  return <Head />
 }
 
 export default BrandHead

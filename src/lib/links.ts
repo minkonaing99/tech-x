@@ -8,7 +8,7 @@
  */
 
 /** Single-tenant store, so the live domain is a safer last resort than a broken link. */
-const FALLBACK_ORIGIN = 'https://store.merxylab.com'
+const FALLBACK_ORIGIN = 'https://techx-store.shop'
 
 export function siteOrigin(): string {
   const configured = process.env.NEXT_PUBLIC_SITE_URL || process.env.AUTH_URL || FALLBACK_ORIGIN

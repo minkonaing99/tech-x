@@ -65,7 +65,7 @@ export function OrderDelivered({
 
 OrderDelivered.PreviewProps = {
   orderId: '1c34b3b6-1234-5678-9abc-def012345678',
-  orderUrl: 'https://store.merxylab.com/order/1c34b3b6-1234-5678-9abc-def012345678',
+  orderUrl: 'https://techx-store.shop/order/1c34b3b6-1234-5678-9abc-def012345678',
   kind: 'wallet',
   placedAt: '2026-08-19T03:35:00.000Z',
   updatedAt: '2026-08-21T09:10:00.000Z',

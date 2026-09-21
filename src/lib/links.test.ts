@@ -30,12 +30,12 @@ describe('siteOrigin', () => {
     // An email link is written once and read forever. A relative or empty href
     // in a customer inbox is worse than a hardcoded single-tenant domain.
     setEnv(undefined, undefined)
-    expect(siteOrigin()).toBe('https://store.merxylab.com')
+    expect(siteOrigin()).toBe('https://techx-store.shop')
   })
 
   it('ignores a blank env var instead of emitting an empty origin', () => {
     setEnv('', '')
-    expect(siteOrigin()).toBe('https://store.merxylab.com')
+    expect(siteOrigin()).toBe('https://techx-store.shop')
   })
 
   it('strips a trailing slash so joins never double up', () => {

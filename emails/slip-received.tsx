@@ -77,7 +77,7 @@ export function SlipReceived({
 
 SlipReceived.PreviewProps = {
   orderId: '1c34b3b6-1234-5678-9abc-def012345678',
-  orderUrl: 'https://store.merxylab.com/order/1c34b3b6-1234-5678-9abc-def012345678',
+  orderUrl: 'https://techx-store.shop/order/1c34b3b6-1234-5678-9abc-def012345678',
   total: 'Ks 555,000',
   method: 'KBZ Pay',
   placedAt: '2026-08-19T03:35:00.000Z',

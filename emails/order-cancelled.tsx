@@ -67,8 +67,8 @@ export function OrderCancelled({ orderId, orderUrl, shopUrl, reason }: OrderCanc
 
 OrderCancelled.PreviewProps = {
   orderId: '1c34b3b6-1234-5678-9abc-def012345678',
-  orderUrl: 'https://store.merxylab.com/order/1c34b3b6-1234-5678-9abc-def012345678',
-  shopUrl: 'https://store.merxylab.com/shop',
+  orderUrl: 'https://techx-store.shop/order/1c34b3b6-1234-5678-9abc-def012345678',
+  shopUrl: 'https://techx-store.shop/shop',
   reason: 'Payment was not received within 24 hours, so the order was released automatically.',
 } satisfies OrderCancelledProps
 

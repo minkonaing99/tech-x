@@ -81,7 +81,7 @@ export function SlipSubmittedAlert({
 
 SlipSubmittedAlert.PreviewProps = {
   orderId: '1c34b3b6-1234-5678-9abc-def012345678',
-  adminUrl: 'https://store.merxylab.com/admin/orders/1c34b3b6-1234-5678-9abc-def012345678',
+  adminUrl: 'https://techx-store.shop/admin/orders/1c34b3b6-1234-5678-9abc-def012345678',
   total: 'Ks 555,000',
   method: 'KBZ Pay',
   recipient: 'Ko Aung',

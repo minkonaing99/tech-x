@@ -17,15 +17,15 @@ describe('sitemap', () => {
 
   it('lists the static pages, the categories, and every product', async () => {
     const urls = (await sitemap()).map((e) => e.url)
-    expect(urls).toContain('https://merxylab.example/shop')
-    expect(urls).toContain('https://merxylab.example/shop/rings')
-    expect(urls).toContain('https://merxylab.example/product/signet-01')
+    expect(urls).toContain('https://techx-store.shop/shop')
+    expect(urls).toContain('https://techx-store.shop/shop/rings')
+    expect(urls).toContain('https://techx-store.shop/product/signet-01')
   })
 
   it('publishes both locales of a content page', async () => {
     const urls = (await sitemap()).map((e) => e.url)
-    expect(urls).toContain('https://merxylab.example/contact')
-    expect(urls).toContain('https://merxylab.example/my/contact')
+    expect(urls).toContain('https://techx-store.shop/contact')
+    expect(urls).toContain('https://techx-store.shop/my/contact')
   })
 
   it('still returns the static routes when the catalog read throws', async () => {
@@ -38,8 +38,8 @@ describe('sitemap', () => {
 
     const entries = await sitemap()
     const urls = entries.map((e) => e.url)
-    expect(urls).toContain('https://merxylab.example/shop')
-    expect(urls).toContain('https://merxylab.example/shop/rings')
+    expect(urls).toContain('https://techx-store.shop/shop')
+    expect(urls).toContain('https://techx-store.shop/shop/rings')
     expect(urls.some((u) => u.includes('/product/'))).toBe(false)
   })
 })

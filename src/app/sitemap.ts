@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 import { getAllCategories, getAllProducts } from '@/lib/catalog'
 import { localePath } from '@/lib/i18n'
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://merxylab.example'
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://techx-store.shop'
 
 /** Content pages published in both English and Burmese. */
 const CONTENT_PATHS = [

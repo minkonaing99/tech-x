@@ -126,7 +126,7 @@ export function NewOrderAlert({
 
 NewOrderAlert.PreviewProps = {
   orderId: '1c34b3b6-1234-5678-9abc-def012345678',
-  adminUrl: 'https://store.merxylab.com/admin/orders/1c34b3b6-1234-5678-9abc-def012345678',
+  adminUrl: 'https://techx-store.shop/admin/orders/1c34b3b6-1234-5678-9abc-def012345678',
   total: 'Ks 555,000',
   subtotal: 'Ks 550,000',
   deliveryFee: 'Ks 5,000',

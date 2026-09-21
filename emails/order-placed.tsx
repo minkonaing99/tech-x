@@ -105,10 +105,10 @@ export function OrderPlaced({
 
 OrderPlaced.PreviewProps = {
   orderId: '1c34b3b6-1234-5678-9abc-def012345678',
-  orderUrl: 'https://store.merxylab.com/order/1c34b3b6-1234-5678-9abc-def012345678',
+  orderUrl: 'https://techx-store.shop/order/1c34b3b6-1234-5678-9abc-def012345678',
   method: 'KBZ Pay',
   kind: 'wallet',
-  accountName: 'Merxy Lab',
+  accountName: 'Tech X',
   accountPhone: '09 7XX XXX XXX',
   total: 'Ks 555,000',
   subtotal: 'Ks 550,000',

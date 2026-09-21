@@ -51,7 +51,7 @@ export function LowStockAlert({ productName, remaining, adminUrl }: LowStockProp
 LowStockAlert.PreviewProps = {
   productName: 'MXK-65 Walnut',
   remaining: 2,
-  adminUrl: 'https://store.merxylab.com/admin/products',
+  adminUrl: 'https://techx-store.shop/admin/products',
 } satisfies LowStockProps
 
 export default LowStockAlert

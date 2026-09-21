@@ -30,7 +30,7 @@ const notoMyanmar = Noto_Sans_Myanmar({
   variable: '--font-noto-myanmar',
 })
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://merxylab.example'
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://techx-store.shop'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
