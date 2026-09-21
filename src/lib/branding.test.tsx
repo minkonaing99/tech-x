@@ -5,6 +5,7 @@ import { Footer } from '@/components/footer'
 import { SITE } from './site-info'
 import { PasswordReset } from '../../emails/password-reset'
 import { CTABanner } from '@/components/home/cta-banner'
+import { ReturnsView } from '@/components/pages/returns'
 import { EmailFooter } from '../../emails/_footer'
 
 describe('Tech X branding', () => {
@@ -16,7 +17,10 @@ describe('Tech X branding', () => {
     expect(html).not.toContain('/product/')
     expect(SITE.telegram).toBe('techxitstore')
     expect(SITE.facebook).toBe('https://www.facebook.com/share/1EPSg63RSt/?mibextid=wwXIfr')
-    expect(await render(<EmailFooter />)).toContain('https://t.me/techxitstore')
+    const emailFooter = await render(<EmailFooter />)
+    expect(SITE.city).toBe('Yangon')
+    expect(emailFooter).toContain('Yangon, Myanmar')
+    expect(emailFooter).toContain('https://t.me/techxitstore')
   })
   it('uses the new identity while preserving storefront navigation', () => {
     const html = renderToStaticMarkup(<Footer />)
@@ -36,5 +40,12 @@ describe('Tech X branding', () => {
     expect(html).toContain(`href="${resetUrl}"`)
     expect(html.replace(/<!--.*?-->/g, '')).toContain('15 minutes')
     expect(html).not.toContain('merxylab')
+  })
+
+  it('explains the two-week return window and Thailand warranty process', () => {
+    const html = renderToStaticMarkup(<ReturnsView locale="en" />)
+    expect(html).toContain('first two weeks')
+    expect(html).toContain('Thailand')
+    expect(html).toContain('about one month')
   })
 })

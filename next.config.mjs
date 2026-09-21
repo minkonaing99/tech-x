@@ -44,8 +44,7 @@ const nextConfig = {
   typescript: { ignoreBuildErrors: true },
   // Runtime uploads now write to Cloudflare R2 (object storage), not the
   // local disk. The Easy Deploy / Hostinger filesystem is treated as
-  // build-frozen — no `writeFile` to `public/` at request time. See
-  // docs/TECH.md "Photos on R2 (Cloudflare)" ADR.
+  // build-frozen — no `writeFile` to `public/` at request time.
   images: {
     remotePatterns: cdnHost
       ? [{ protocol: 'https', hostname: cdnHost, pathname: '/**' }]
@@ -53,7 +52,7 @@ const nextConfig = {
   },
   async headers() {
     // Only the security set. Product photos and payment QR moved to the R2
-    // public bucket (see the ADR), so `/products/*` and `/payment-qr/*` no
+    // public bucket, so `/products/*` and `/payment-qr/*` no
     // longer resolve to anything Next serves - their cache headers were being
     // set on 404s. `putPublic` sends `Cache-Control` with the object itself.
     return [{ source: '/(.*)', headers: SECURITY_HEADERS }]

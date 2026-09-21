@@ -28,7 +28,7 @@ const ITEMS = [
   },
   {
     title: 'Warranty and returns',
-    body: 'A factory fault in the first two weeks we settle ourselves - refund or replacement, here in Myanmar. After that we take the warranty claim to the company for you, so you are never chasing a manufacturer overseas on your own.',
+    body: 'A factory fault in the first two weeks we settle ourselves - refund or replacement, here in Myanmar. After that we handle the official warranty claim and shipping to Thailand. The process usually takes about one month.',
   },
 ] as const
 

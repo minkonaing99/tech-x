@@ -247,13 +247,13 @@ describe('POST /api/v1/orders', () => {
   it('lets a sale bring an order under the cash-on-delivery cap', async () => {
     // Mirror of the over-cap test above: COD risk is the cash the courier
     // collects, so the discounted total is the right thing to gate on.
-    cartLines = [line({ priceMmk: 300_000, salePriceMmk: 200_000, qty: 2 })]
+    cartLines = [line({ priceMmk: 200_000, salePriceMmk: 140_000, qty: 2 })]
     selects = [[SAVED_ADDRESS], [YANGON], [COD]]
     const res = await POST(request({ shippingAddressId: ADDRESS_ID, paymentMethodId: 'cod' }))
 
     expect(res.status).toBe(200)
     const order = inserted(orders) as Record<string, number>
-    expect(order.totalMmk).toBe(403_000)
+    expect(order.totalMmk).toBe(283_000)
   })
 
   it('charges the list price when the stored sale price is not below it', async () => {
@@ -308,11 +308,17 @@ describe('POST /api/v1/orders', () => {
   })
 
   it('refuses cash on delivery above the cap', async () => {
-    cartLines = [line({ priceMmk: 300_000 })] // 600,000 + fee, over the 500,000 cap
+    cartLines = [line({ priceMmk: 150_000 })] // 300,000 + 3,000 delivery, over the cap
     selects = [[SAVED_ADDRESS], [YANGON], [COD]]
     const res = await POST(request({ shippingAddressId: ADDRESS_ID, paymentMethodId: 'cod' }))
     expect(res.status).toBe(400)
     expect(inserts).toHaveLength(0)
+  })
+
+  it('accepts cash on delivery when the total is exactly at the cap', async () => {
+    cartLines = [line({ priceMmk: 148_500 })] // 297,000 + 3,000 delivery
+    selects = [[SAVED_ADDRESS], [YANGON], [COD]]
+    expect((await POST(request({ shippingAddressId: ADDRESS_ID, paymentMethodId: 'cod' }))).status).toBe(200)
   })
 
   it('refuses cash on delivery in a division that does not allow it', async () => {

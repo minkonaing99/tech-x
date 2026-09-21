@@ -11,9 +11,9 @@ export const ABOUT_META = {
 
 const HOW_IT_WORKS = [
   'Order online, pay by bank transfer or mobile wallet, and upload the slip on your order page.',
-  'Cash on delivery is available in Yangon and Mandalay for orders under Ks 500,000.',
-  'We ship nationwide from Mandalay. The delivery fee depends on your division and is shown at checkout.',
-  'A factory fault in the first two weeks? We refund or replace it here in Myanmar. After that we take the warranty claim to the company for you - nothing is your problem to ship overseas.',
+  'Cash on delivery is available in Yangon and Mandalay for order totals up to Ks 300,000. Orders above that require online payment.',
+  'We ship nationwide from Yangon. The delivery fee depends on your division and is shown at checkout.',
+  'A factory fault in the first two weeks? We refund or replace it here in Myanmar. After that we handle the official warranty claim, including shipping to Thailand. The process usually takes about one month.',
 ] as const
 
 /** English only - this page is deliberately not translated. */

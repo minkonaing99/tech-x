@@ -43,7 +43,7 @@ const COPY: Dict<ShippingCopy> = {
       items: [
         'Orders are packed the next working day after payment is confirmed.',
         `Within ${SITE.city}: usually 1 to 2 days.`,
-        'Yangon and other main cities: usually 2 to 4 days.',
+        'Other main cities: usually 2 to 4 days.',
         'Remote townships: up to a week, depending on the courier route.',
         'We do not ship on Sundays or public holidays.',
       ],
@@ -54,7 +54,7 @@ const COPY: Dict<ShippingCopy> = {
       items: [
         'Bank transfer or mobile wallet: place the order, then upload the payment slip on your order page.',
         'Unpaid orders are cancelled automatically after 24 hours so stock returns to the shelf.',
-        'Cash on delivery is available in Yangon and Mandalay for orders under Ks 500,000.',
+        'Cash on delivery is available in Yangon and Mandalay for order totals up to Ks 300,000. Orders above that require online payment.',
       ],
     },
     packing: {
@@ -63,7 +63,7 @@ const COPY: Dict<ShippingCopy> = {
     },
     international: {
       title: 'International',
-      before: 'We ship within Myanmar only. Returns and warranty claims are handled locally - see ',
+      before: 'We ship within Myanmar only. Return warranty items to us in Yangon; we handle any required shipment to Thailand - see ',
       link: 'returns and warranty',
       after: '.',
     },
@@ -71,7 +71,7 @@ const COPY: Dict<ShippingCopy> = {
   my: {
     eyebrow: 'ပို့ဆောင်ရေး',
     title: 'အော်ဒါ ဘယ်လို ရောက်လာမလဲ',
-    lead: `အော်ဒါတိုင်းသည် ${SITE.city}မြို့မှ ပြည်တွင်း ပို့ဆောင်ရေးဖြင့် ထွက်ခွာသည်။ ပို့ခသည် တိုင်းဒေသကြီးအလိုက် ကွာခြားပြီး ငွေမပေးမီ ငွေရှင်းချိန်တွင် ပေါင်းထည့်ပါသည်။`,
+    lead: 'အော်ဒါတိုင်းသည် ရန်ကုန်မြို့မှ ပြည်တွင်း ပို့ဆောင်ရေးဖြင့် ထွက်ခွာသည်။ ပို့ခသည် တိုင်းဒေသကြီးအလိုက် ကွာခြားပြီး ငွေမပေးမီ ငွေရှင်းချိန်တွင် ပေါင်းထည့်ပါသည်။',
     fees: {
       title: 'ပို့ခ နှုန်းထားများ',
       division: 'တိုင်းဒေသကြီး',
@@ -85,8 +85,8 @@ const COPY: Dict<ShippingCopy> = {
       title: 'ကြာချိန်',
       items: [
         'ငွေပေးချေမှု အတည်ပြုပြီးနောက် နောက်အလုပ်ရက်တွင် ပစ္စည်း ထုပ်ပိုးပါသည်။',
-        `${SITE.city}မြို့တွင်း - ပုံမှန် ၁ ရက်မှ ၂ ရက်။`,
-        'ရန်ကုန်နှင့် အခြားမြို့ကြီးများ - ပုံမှန် ၂ ရက်မှ ၄ ရက်။',
+        'ရန်ကုန်မြို့တွင်း - ပုံမှန် ၁ ရက်မှ ၂ ရက်။',
+        'အခြားမြို့ကြီးများ - ပုံမှန် ၂ ရက်မှ ၄ ရက်။',
         'ဝေးလံသော မြို့နယ်များ - ကားလမ်းကြောင်းပေါ် မူတည်၍ တစ်ပတ်အထိ ကြာနိုင်သည်။',
         'တနင်္ဂနွေနေ့နှင့် အများပြည်သူ ရုံးပိတ်ရက်များတွင် မပို့ပါ။',
       ],
@@ -97,7 +97,7 @@ const COPY: Dict<ShippingCopy> = {
       items: [
         'ဘဏ်လွှဲ သို့မဟုတ် မိုဘိုင်းပိုက်ဆံအိတ် - အော်ဒါတင်ပြီး ငွေလွှဲပြေစာကို အော်ဒါစာမျက်နှာတွင် တင်ပါ။',
         'ငွေမပေးရသေးသော အော်ဒါများကို ၂၄ နာရီအကြာတွင် အလိုအလျောက် ပယ်ဖျက်ပြီး ပစ္စည်းကို စင်ပေါ် ပြန်တင်ပါသည်။',
-        'ရန်ကုန်နှင့် မန္တလေးတွင် ကျပ် ၅၀၀,၀၀၀ အောက် အော်ဒါများအတွက် အိမ်ရောက် ငွေချေစနစ် ရနိုင်သည်။',
+        'ရန်ကုန်နှင့် မန္တလေးတွင် အော်ဒါစုစုပေါင်း ကျပ် ၃၀၀,၀၀၀ အထိ အိမ်ရောက် ငွေချေနိုင်သည်။ ထိုပမာဏထက် ကျော်ပါက အွန်လိုင်းမှ ကြိုတင် ငွေပေးရပါမည်။',
       ],
     },
     packing: {
@@ -106,7 +106,7 @@ const COPY: Dict<ShippingCopy> = {
     },
     international: {
       title: 'နိုင်ငံရပ်ခြား',
-      before: 'မြန်မာနိုင်ငံအတွင်းသာ ပို့ဆောင်ပါသည်။ ပြန်အမ်းခြင်းနှင့် အာမခံကို ပြည်တွင်း၌ပင် ဆောင်ရွက်ပေးသည် - ',
+      before: 'မြန်မာနိုင်ငံအတွင်းသာ ပို့ဆောင်ပါသည်။ အာမခံပစ္စည်းကို ရန်ကုန်ရှိ ကျွန်ုပ်တို့ထံ ပြန်ပို့ပါ။ လိုအပ်သော ထိုင်းနိုင်ငံသို့ ပို့ဆောင်မှုကို ကျွန်ုပ်တို့ ဆောင်ရွက်ပေးသည် - ',
       link: 'ပြန်အမ်းခြင်းနှင့် အာမခံ',
       after: ' တွင် ကြည့်ပါ။',
     },

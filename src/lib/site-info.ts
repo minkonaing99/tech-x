@@ -36,9 +36,9 @@ export interface SiteInfo {
 export const SITE: SiteInfo = {
   name: 'Tech X',
   legalName: 'Tech X',
-  city: 'Mandalay',
+  city: 'Yangon',
   country: 'Myanmar',
-  street: '23rd Street, between 82nd and 83rd',
+  street: null,
   // TODO: add a reply-capable inbox - the contact page hides the row until then.
   email: null,
   phone: '09 787 753 307',

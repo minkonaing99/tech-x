@@ -20,7 +20,7 @@ const COPY: Dict<ReturnsCopy> = {
   en: {
     eyebrow: 'Support',
     title: 'Returns and warranty.',
-    lead: 'If something is wrong, we sort it out here in Myanmar. Nothing gets shipped overseas and you never deal with the manufacturer alone.',
+    lead: 'If something is wrong, return it to us in Yangon. We handle the process from there, including any official warranty shipment to Thailand.',
     rule: {
       title: 'The first two weeks',
       intro:
@@ -53,14 +53,14 @@ const COPY: Dict<ReturnsCopy> = {
       after: ' - the form asks for the order number up front.',
     },
     warranty: {
-      title: 'Warranty',
+      title: 'Official manufacturer warranty',
       intro:
         'Every product is genuine, sealed stock and carries the manufacturer warranty that came with it - typically one to two years, depending on the brand. The warranty period for a specific product is listed in its specs. This is the route for any fault found after the first two weeks.',
       items: [
         'Keep your order number: it is your proof of purchase, so no paper receipt is needed.',
-        'We send the product to the company and follow their warranty policy. The outcome - repair, replacement, or refusal - is theirs to decide, not ours.',
-        'We handle the claim with the distributor on your behalf.',
-        'Turnaround depends on the brand. We tell you the expected wait before you send anything in.',
+        'We send the product to Thailand when required and follow the manufacturer warranty policy. The outcome - repair, replacement, or refusal - is theirs to decide, not ours.',
+        'We handle the official claim with the distributor on your behalf.',
+        'The process usually takes about one month. Timing can vary by brand, and we confirm the expected wait before you send anything in.',
         'Physical damage, liquid damage, and normal wear on cables or switches are not covered.',
       ],
     },
@@ -72,7 +72,7 @@ const COPY: Dict<ReturnsCopy> = {
   my: {
     eyebrow: 'ဝန်ဆောင်မှု',
     title: 'ပြန်အမ်းခြင်းနှင့် အာမခံ',
-    lead: 'ပြဿနာ ရှိပါက မြန်မာပြည်တွင်းမှာပင် ဖြေရှင်းပေးပါသည်။ နိုင်ငံရပ်ခြားသို့ ပို့စရာ မလိုပါ၊ ထုတ်လုပ်သူနှင့် သင်တစ်ယောက်တည်း ဆက်သွယ်စရာလည်း မလိုပါ။',
+    lead: 'ပြဿနာ ရှိပါက ရန်ကုန်ရှိ ကျွန်ုပ်တို့ထံ ပြန်ပို့ပါ။ ထိုင်းနိုင်ငံသို့ တရားဝင် အာမခံအတွက် ပို့ခြင်းအပါအဝင် ကျန်လုပ်ငန်းစဉ်အားလုံးကို ကျွန်ုပ်တို့ ဆောင်ရွက်ပေးသည်။',
     rule: {
       title: 'ပထမ နှစ်ပတ်',
       intro:
@@ -105,14 +105,14 @@ const COPY: Dict<ReturnsCopy> = {
       after: ' - ဖောင်တွင် အော်ဒါနံပါတ်ကို ဦးစွာ တောင်းပါသည်။',
     },
     warranty: {
-      title: 'အာမခံ',
+      title: 'တရားဝင် ထုတ်လုပ်သူ အာမခံ',
       intro:
         'ပစ္စည်းတိုင်းသည် ချိပ်ပိတ်ထားသော အစစ်အမှန်ဖြစ်ပြီး ထုတ်လုပ်သူ၏ အာမခံ ပါဝင်သည် - အမှတ်တံဆိပ်ပေါ် မူတည်၍ ပုံမှန်အားဖြင့် တစ်နှစ်မှ နှစ်နှစ်။ ပစ္စည်းတစ်ခုချင်းစီ၏ အာမခံကာလကို ၎င်း၏ အသေးစိတ်စာရင်းတွင် ဖော်ပြထားသည်။ ပထမ နှစ်ပတ်ကျော်ပြီးနောက် ပေါ်လာသော ချွတ်ယွင်းချက်များကို ဤလုပ်ငန်းစဉ်ဖြင့် ဆောင်ရွက်သည်။',
       items: [
         'အော်ဒါနံပါတ်ကို သိမ်းထားပါ - ဝယ်ယူကြောင်း သက်သေဖြစ်၍ စာရွက်ဘောက်ချာ မလိုပါ။',
-        'ပစ္စည်းကို ကုမ္ပဏီထံ ပို့ပြီး ၎င်းတို့၏ အာမခံ စည်းမျဉ်းအတိုင်း ဆောင်ရွက်သည်။ ပြုပြင်မလား၊ အသစ်လဲမလား၊ ငြင်းပယ်မလားကို ကုမ္ပဏီမှ ဆုံးဖြတ်သည် - ကျွန်ုပ်တို့ မဆုံးဖြတ်ပါ။',
-        'ဖြန့်ချိသူနှင့် အာမခံကိစ္စကို ကျွန်ုပ်တို့ ကိုယ်စား ဆောင်ရွက်ပေးသည်။',
-        'ကြာချိန်သည် အမှတ်တံဆိပ်ပေါ် မူတည်သည်။ ပစ္စည်း မပို့ခင် ခန့်မှန်းကြာချိန်ကို ကြိုပြောပါသည်။',
+        'လိုအပ်ပါက ပစ္စည်းကို ထိုင်းနိုင်ငံသို့ ပို့ပြီး ထုတ်လုပ်သူ၏ အာမခံ စည်းမျဉ်းအတိုင်း ဆောင်ရွက်သည်။ ပြုပြင်မလား၊ အသစ်လဲမလား၊ ငြင်းပယ်မလားကို ကုမ္ပဏီမှ ဆုံးဖြတ်သည် - ကျွန်ုပ်တို့ မဆုံးဖြတ်ပါ။',
+        'ဖြန့်ချိသူနှင့် တရားဝင် အာမခံကိစ္စကို ကျွန်ုပ်တို့ ကိုယ်စား ဆောင်ရွက်ပေးသည်။',
+        'လုပ်ငန်းစဉ်သည် ပုံမှန်အားဖြင့် တစ်လခန့် ကြာနိုင်သည်။ အမှတ်တံဆိပ်ပေါ် မူတည်၍ ကွာနိုင်ပြီး ပစ္စည်း မပို့ခင် ခန့်မှန်းကြာချိန်ကို ကြိုပြောပါသည်။',
         'ရုပ်ပိုင်းဆိုင်ရာ ပျက်စီးမှု၊ အရည်ဖိတ်မှုနှင့် cable, switch များ သဘာဝအလျောက် ဟောင်းနွမ်းမှုကို အာမခံ မပါဝင်ပါ။',
       ],
     },

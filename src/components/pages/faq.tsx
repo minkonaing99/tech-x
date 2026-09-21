@@ -33,7 +33,7 @@ const COPY: Dict<FaqCopy> = {
           },
           {
             q: 'Is cash on delivery available?',
-            a: 'Yes, in Yangon and Mandalay, for orders under Ks 500,000. Everywhere else is prepaid.',
+            a: 'Yes, in Yangon and Mandalay, for order totals up to Ks 300,000. Orders above that amount and orders everywhere else require online payment.',
           },
           {
             q: 'Do you take cards?',
@@ -62,7 +62,7 @@ const COPY: Dict<FaqCopy> = {
           },
           {
             q: 'How long does it take?',
-            a: 'One to two days inside Mandalay, two to four days for main cities, up to a week for remote townships.',
+            a: 'One to two days inside Yangon, two to four days for main cities, up to a week for remote townships.',
           },
           {
             q: 'Can I track it?',
@@ -100,11 +100,11 @@ const COPY: Dict<FaqCopy> = {
           },
           {
             q: 'What happens after the first two weeks?',
-            a: 'A fault becomes a warranty claim. We send the product to the company and follow their warranty policy, so you are not dealing with the manufacturer alone.',
+            a: 'A fault becomes an official warranty claim. We handle the claim and send the product to Thailand when required. The process usually takes about one month.',
           },
           {
             q: 'How long is the warranty?',
-            a: 'Whatever the manufacturer gives, typically one to two years. It is listed in each product spec sheet, and we handle the claim for you.',
+            a: 'Whatever the manufacturer gives, typically one to two years. It is listed in each product spec sheet. A claim usually takes about one month because the product may need to be sent to Thailand.',
           },
           {
             q: 'Can I return something I simply did not like?',
@@ -150,7 +150,7 @@ const COPY: Dict<FaqCopy> = {
           },
           {
             q: 'အိမ်ရောက် ငွေချေလို့ ရလား',
-            a: 'ရန်ကုန်နှင့် မန္တလေးတွင် ကျပ် ၅၀၀,၀၀၀ အောက် အော်ဒါများအတွက် ရပါသည်။ အခြားနေရာများတွင် ကြိုတင် ငွေပေးရပါမည်။',
+            a: 'ရန်ကုန်နှင့် မန္တလေးတွင် အော်ဒါစုစုပေါင်း ကျပ် ၃၀၀,၀၀၀ အထိ အိမ်ရောက် ငွေချေနိုင်သည်။ ထိုပမာဏထက် ကျော်သော အော်ဒါများနှင့် အခြားနေရာများအတွက် အွန်လိုင်းမှ ကြိုတင် ငွေပေးရပါမည်။',
           },
           {
             q: 'Card နဲ့ ပေးလို့ ရလား',
@@ -179,7 +179,7 @@ const COPY: Dict<FaqCopy> = {
           },
           {
             q: 'ဘယ်လောက် ကြာလဲ',
-            a: 'မန္တလေးတွင်း ၁ ရက်မှ ၂ ရက်၊ မြို့ကြီးများ ၂ ရက်မှ ၄ ရက်၊ ဝေးလံသော မြို့နယ်များ တစ်ပတ်အထိ ကြာနိုင်သည်။',
+            a: 'ရန်ကုန်မြို့တွင်း ၁ ရက်မှ ၂ ရက်၊ မြို့ကြီးများ ၂ ရက်မှ ၄ ရက်၊ ဝေးလံသော မြို့နယ်များ တစ်ပတ်အထိ ကြာနိုင်သည်။',
           },
           {
             q: 'ပစ္စည်း ဘယ်ရောက်နေလဲ သိနိုင်လား',
@@ -217,11 +217,11 @@ const COPY: Dict<FaqCopy> = {
           },
           {
             q: 'ပထမ နှစ်ပတ် ကျော်ပြီးရင် ဘယ်လိုလဲ',
-            a: 'ချွတ်ယွင်းချက်သည် အာမခံကိစ္စ ဖြစ်လာသည်။ ပစ္စည်းကို ကုမ္ပဏီထံ ပို့ပြီး ၎င်းတို့၏ အာမခံ စည်းမျဉ်းအတိုင်း ဆောင်ရွက်ပေးသဖြင့် ထုတ်လုပ်သူနှင့် သင်တစ်ယောက်တည်း ဆက်သွယ်စရာ မလိုပါ။',
+            a: 'ချွတ်ယွင်းချက်သည် တရားဝင် အာမခံကိစ္စ ဖြစ်လာသည်။ လိုအပ်ပါက ပစ္စည်းကို ထိုင်းနိုင်ငံသို့ ပို့ပြီး ကျွန်ုပ်တို့ ကိုယ်စား ဆောင်ရွက်ပေးသည်။ ပုံမှန်အားဖြင့် တစ်လခန့် ကြာနိုင်သည်။',
           },
           {
             q: 'အာမခံ ဘယ်လောက် ကြာလဲ',
-            a: 'ထုတ်လုပ်သူ ပေးသည့်အတိုင်း၊ ပုံမှန်အားဖြင့် တစ်နှစ်မှ နှစ်နှစ်။ ပစ္စည်းတစ်ခုချင်းစီ၏ အသေးစိတ်တွင် ဖော်ပြထားပြီး အာမခံကိစ္စကို ကျွန်ုပ်တို့ ကိုယ်စား ဆောင်ရွက်ပေးသည်။',
+            a: 'ထုတ်လုပ်သူ ပေးသည့်အတိုင်း၊ ပုံမှန်အားဖြင့် တစ်နှစ်မှ နှစ်နှစ်။ ပစ္စည်းတစ်ခုချင်းစီ၏ အသေးစိတ်တွင် ဖော်ပြထားသည်။ ပစ္စည်းကို ထိုင်းနိုင်ငံသို့ ပို့ရနိုင်သောကြောင့် အာမခံ ဆောင်ရွက်ချိန်သည် ပုံမှန်အားဖြင့် တစ်လခန့် ကြာနိုင်သည်။',
           },
           {
             q: 'သဘောမကျလို့ ပြန်အမ်းလို့ ရလား',

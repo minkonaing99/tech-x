@@ -28,7 +28,7 @@ import { sendTelegram } from '@/lib/telegram'
 import { NewOrderAlert } from '@emails/new-order-alert'
 import { OrderPlaced } from '@emails/order-placed'
 
-const COD_CAP_MMK = 500_000
+const COD_CAP_MMK = 300_000
 const ORDER_EXPIRY_MS = 24 * 60 * 60 * 1000
 
 /**
@@ -206,7 +206,7 @@ export async function POST(req: Request): Promise<NextResponse> {
 
   if (method.kind === 'cod') {
     if (!division.codAllowed || total > COD_CAP_MMK) {
-      return fail('VALIDATION_ERROR', `Cash on Delivery available only for Yangon/Mandalay orders under ${formatMmk(COD_CAP_MMK)}.`, 400)
+      return fail('VALIDATION_ERROR', `Cash on Delivery is available only for Yangon/Mandalay order totals up to ${formatMmk(COD_CAP_MMK)}. Online payment is required above this amount.`, 400)
     }
   }
 

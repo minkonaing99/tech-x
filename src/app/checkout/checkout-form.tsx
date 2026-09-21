@@ -28,7 +28,7 @@ import {
 import type { CartLine } from '@/lib/cart-session'
 import { api } from '@/lib/api-client'
 
-const COD_CAP_MMK = 500_000
+const COD_CAP_MMK = 300_000
 
 interface AddressLite {
   id: string
@@ -784,7 +784,8 @@ function PaymentSection(props: PaymentSectionProps) {
       )}
       {!codEligible && (
         <p className="text-[12px] text-muted">
-          Cash on Delivery available only for Yangon + Mandalay orders under {formatMmk(500_000)}.
+          Cash on Delivery is available only for Yangon + Mandalay order totals up to{' '}
+          {formatMmk(COD_CAP_MMK)}. Online payment is required above this amount.
         </p>
       )}
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-between">
